@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :book_reviews
   root  'sessions#home'
   get '/signup' => 'users#new'
   get '/login' => 'sessions#new'
