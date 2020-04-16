@@ -3,6 +3,6 @@ class User < ApplicationRecord
     validates :name, :email, presence: true
     validates :name, :email, uniqueness: true
 
-    has_many :book_reviews
-    has_many :books, through: :book_reviews
+    has_many :reviews
+    has_many :books, through: :reviews
 end
