@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
     include ApplicationHelper
-hello 
+
 
     helpers do
       def current_user
