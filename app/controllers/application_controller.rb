@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
     include ApplicationHelper
-
+hello 
 
     helpers do
       def current_user
@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
             redirect_to '/' if !logged_in?
         end
       end
-      
+
 
 
 end
