@@ -11,7 +11,10 @@ class ReviewsController < ApplicationController
         @review.build_book unless @review.book
         render :new
       end
+    end
+
+
+    def review_params
+      params.require(:review).permit(:title, :content, :rating)
     end 
-
-
 end
