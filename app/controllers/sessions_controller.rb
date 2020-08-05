@@ -21,10 +21,10 @@ class SessionsController < ApplicationController
             u.password = auth['uid']
         end
 
-       session[:user_id] = @user.id
+        session[:user_id] = @user.id
 
         redirect_to '/books'
-      end
+    end
 
 
 
